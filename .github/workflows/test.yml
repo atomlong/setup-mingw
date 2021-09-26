@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Cygwin
-        uses: egor-tensin/setup-cygwin@v3
+        uses: atomlong/setup-cygwin@v3
       - name: Set up MinGW
         id: setup
         uses: ./
@@ -58,7 +58,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Clean up PATH
-        uses: egor-tensin/cleanup-path@v1
+        uses: atomlong/cleanup-path@v2
         if: runner.os == 'Windows'
       - name: Set up MinGW
         id: setup
